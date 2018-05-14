@@ -1,0 +1,20 @@
+Restoring a database from a backup copy
+To restore a database by using a full backup from a specified location, specify the restoreFrom=path attribute in the boot-time connection URL.
+
+If a database with the same name exists in the derby.system.home location, the system will delete the database, copy it from the backup location, and then restart it.
+
+The log files are copied to the same location they were in when the backup was taken. You can use the logDevice attribute in conjunction with the restoreFrom=path attribute to store logs in a different location.
+
+For example, to restore the sample database by using a backup copy in c:\mybackups\sample, the connection URL should be:
+jdbc:derby:sample;restoreFrom=c:\mybackups\sample
+For more information, see "restoreFrom=path attribute" in the Derby Reference Manual.
+
+Parent topic: Backing up and restoring databases
+Related concepts
+Backing up a database
+Roll-forward recovery
+Related tasks
+Creating a database from a backup copy
+
+Reference
+https://db.apache.org/derby/docs/10.14/adminguide/

@@ -1,0 +1,1 @@
+DROP TABLE acg_character.profile;

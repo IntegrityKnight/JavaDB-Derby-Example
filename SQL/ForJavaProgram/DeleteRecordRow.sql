@@ -1,0 +1,1 @@
+DELETE FROM acg_character.profile WHERE id = 107;

@@ -1,0 +1,1 @@
+SELECT ID, ACTOR, PRODUCT FROM acg_character.profile;
